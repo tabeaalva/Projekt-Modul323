@@ -1,3 +1,5 @@
+package ch.bbzbl;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -8,6 +10,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("hello");
     try {
     // Pfad zur JSON-Datei
     String jsonDateipfad = "sterberateliste.json";
@@ -34,4 +38,7 @@ public class Main {
     e.printStackTrace();
     }
     }
+
+   
+
 }

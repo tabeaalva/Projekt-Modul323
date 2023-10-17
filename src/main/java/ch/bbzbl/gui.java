@@ -1,3 +1,7 @@
+package ch.bbzbl;
+
+import java.util.Scanner;
+
 public class gui {
     
     public static void KonsoleAnzeige(){

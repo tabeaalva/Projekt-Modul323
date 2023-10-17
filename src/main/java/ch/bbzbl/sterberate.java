@@ -1,14 +1,16 @@
-public class Sterberate {
+package ch.bbzbl;
+
+public class sterberate {
  private String jahr;
  private int monat;
  private String wochentag;
  private String sterberate;
  private String anzTotal;
 
-    public Sterberate() {
+    public void Sterberate() {
     }
 
-    public Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
+    public void Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
         this.jahr = jahr;
         this.monat = monat;
         this.wochentag = wochentag;
