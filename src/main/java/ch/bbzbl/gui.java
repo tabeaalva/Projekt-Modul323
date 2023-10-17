@@ -1,6 +1,7 @@
 public class gui {
     
-    Scanner scanner = new Scanner(System.in);
+    public static void KonsoleAnzeige(){
+        Scanner scanner = new Scanner(System.in);
     
         System.out.println("\n=== Sterbedaten-Analyse-Menü ===");
         System.out.println("1. Filtern nach Wochentag");
@@ -35,5 +36,6 @@ public class gui {
             default:
                 System.out.println("Ungültige Auswahl. Bitte wählen Sie eine der verfügbaren Optionen (1/2/3/4).");
         }
+    }
 
 }
