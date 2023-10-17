@@ -1,3 +1,5 @@
+package ch.bbzbl;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -10,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Pfad zur JSON-Datei
-            String jsonDateipfad = "sterberateliste.json";
+            String jsonDateipfad = "src/main/resources/sterberateliste.json";
 
             // Gson-Objekt erstellen
             Gson gson = new Gson();

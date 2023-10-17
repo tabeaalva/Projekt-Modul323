@@ -1,3 +1,5 @@
+package ch.bbzbl;
+
 public class Sterberate {
  private String jahr;
  private int monat;

@@ -1,3 +1,4 @@
+package ch.bbzbl;
 public class gui {
     
     public static void KonsoleAnzeige(){
