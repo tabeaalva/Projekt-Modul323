@@ -30,7 +30,7 @@ public class Sterberate {
         return monat;
     }
 
-    public void setWoochentag(String wochentag) {
+    public void setWochentag(String wochentag) {
         this.wochentag = wochentag;
     }
     public String getWochentag() {
