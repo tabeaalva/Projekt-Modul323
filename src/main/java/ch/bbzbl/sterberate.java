@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// Start of project
-=======
 public class Sterberate {
  private String jahr;
  private int monat;
@@ -8,23 +5,52 @@ public class Sterberate {
  private String sterberate;
  private String anzTotal;
 
-public Book(String jahr, int monat) {
-    this.jahr = jahr;
-    this.monat = monat;
-}
- 
-public void setJahr(String jahr) {
-    this.jahr = jahr;
-}
+    public Sterberate() {
+    }
 
-public int getJahr() {
-    return jahr;
-}
+    public Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
+        this.jahr = jahr;
+        this.monat = monat;
+        this.wochentag = wochentag;
+        this.sterberate = sterberate;
+        this.anzTotal = anzTotal;
+    }
+    
+    public void setJahr(String jahr) {
+        this.jahr = jahr;
+    }
+    public String getJahr() {
+        return jahr;
+    }
 
- // Konstruktor, Getter und Setter hier...
+    public void setMonat(int monat) {
+        this.monat = monat;
+    }
+    public int getMonat() {
+        return monat;
+    }
 
- // Stelle sicher, dass du einen Standardkonstruktor ohne Argumente für Gson hast
- public Benutzer() {
- }
+    public void setWoochentag(String wochentag) {
+        this.wochentag = wochentag;
+    }
+    public String getWochentag() {
+        return wochentag;
+    }
+
+    public void setSterbedatum(String sterberate) {
+        this.sterberate = sterberate;
+    }
+    public String getSterbedatum() {
+        return sterberate;
+    }
+
+    public void setAnzTotal(String anzTotal) {
+        this.anzTotal = anzTotal;
+    }
+    public String getAnzTotal() {
+        return anzTotal;
+    }
+    // Konstruktor, Getter und Setter hier...
+
+    // Stelle sicher, dass du einen Standardkonstruktor ohne Argumente für Gson hast
 }
->>>>>>> e933277 (start sterberate klass)
