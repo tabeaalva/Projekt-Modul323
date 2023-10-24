@@ -8,7 +8,7 @@ public class gui {
     public static void KonsoleAnzeige(){
         Scanner scanner = new Scanner(System.in);
     
-        System.out.println("\n=== Sterbedaten-Analyse-Menü ===");
+        System.out.println("\n∏=== Sterbedaten-Analyse-Menü ===");
         System.out.println("1. Filtern nach Wochentag");
         System.out.println("2. Höchster Wert der Wochen eines Jahres");
         System.out.println("3. Gesamtzahl der Todesfälle in einem Jahr");
