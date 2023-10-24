@@ -1,10 +1,8 @@
 package ch.bbzbl;
 
-<<<<<<< HEAD
 public class Sterberate {
-=======
+
 public class sterberate {
->>>>>>> c23e2434314a1392d282fbbca18fae09fdf5a013
  private String jahr;
  private int monat;
  private String wochentag;
