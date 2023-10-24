@@ -10,9 +10,21 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+<<<<<<< HEAD
+
+        System.out.println("hello");
+    try {
+    // Pfad zur JSON-Datei
+    String jsonDateipfad = "sterberateliste.json";
+=======
         try {
             // Pfad zur JSON-Datei
+<<<<<<< HEAD
             String jsonDateipfad = "src/main/resources/sterberateliste.json";
+=======
+            String jsonDateipfad = "sterberateliste.json";
+>>>>>>> 99eed544016b6bdaa465c5cd91534d10ea83e68c
+>>>>>>> c23e2434314a1392d282fbbca18fae09fdf5a013
 
             // Gson-Objekt erstellen
             Gson gson = new Gson();
@@ -32,8 +44,18 @@ public class Main {
             System.out.println();
             }
 
+<<<<<<< HEAD
+    } catch (Exception e) {
+    e.printStackTrace();
+    }
+    }
+
+   
+
+=======
         } catch (Exception e) {
             e.printStackTrace();
             }
         }
+>>>>>>> 99eed544016b6bdaa465c5cd91534d10ea83e68c
 }

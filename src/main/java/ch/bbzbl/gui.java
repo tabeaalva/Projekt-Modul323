@@ -1,4 +1,10 @@
 package ch.bbzbl;
+<<<<<<< HEAD
+=======
+
+import java.util.Scanner;
+
+>>>>>>> c23e2434314a1392d282fbbca18fae09fdf5a013
 public class gui {
     
     public static void KonsoleAnzeige(){

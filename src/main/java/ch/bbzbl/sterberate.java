@@ -1,16 +1,20 @@
 package ch.bbzbl;
 
+<<<<<<< HEAD
 public class Sterberate {
+=======
+public class sterberate {
+>>>>>>> c23e2434314a1392d282fbbca18fae09fdf5a013
  private String jahr;
  private int monat;
  private String wochentag;
  private String sterberate;
  private String anzTotal;
 
-    public Sterberate() {
+    public void Sterberate() {
     }
 
-    public Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
+    public void Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
         this.jahr = jahr;
         this.monat = monat;
         this.wochentag = wochentag;
