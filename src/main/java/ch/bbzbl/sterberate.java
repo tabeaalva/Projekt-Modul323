@@ -6,17 +6,17 @@ public class Sterberate {
  private int monat;
  private String wochentag;
  private String sterbedatum;
- private String anzTotal;
+ private String anz_total;
 
     public Sterberate() {
     }
 
-    public Sterberate(String jahr, int monat, String wochentag, String sterbedatum, String anzTotal) {
+    public Sterberate(String jahr, int monat, String wochentag, String sterbedatum, String anz_total) {
         this.jahr = jahr;
         this.monat = monat;
         this.wochentag = wochentag;
         this.sterbedatum = sterbedatum;
-        this.anzTotal = anzTotal;
+        this.anz_total = anz_total;
     }
     
     public void setJahr(String jahr) {
@@ -47,11 +47,11 @@ public class Sterberate {
         return sterbedatum;
     }
 
-    public void setAnzTotal(String anzTotal) {
-        this.anzTotal = anzTotal;
+    public void setAnzTotal(String anz_total) {
+        this.anz_total = anz_total;
     }
     public String getAnzTotal() {
-        return anzTotal;
+        return anz_total;
     }
     // Konstruktor, Getter und Setter hier...
 
