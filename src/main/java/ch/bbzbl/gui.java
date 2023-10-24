@@ -1,13 +1,13 @@
 package ch.bbzbl;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.Scanner;
+import java.util.List;
+
 public class gui {
-    
-    public static void KonsoleAnzeige(){
+
+    public static void KonsoleAnzeige(List<Sterberate> sterberateListe) {
         Scanner scanner = new Scanner(System.in);
-    
+
         System.out.println("\n=== Sterbedaten-Analyse-Menü ===");
         System.out.println("1. Filtern nach Wochentag");
         System.out.println("2. Höchster Wert der Wochen eines Jahres");
@@ -18,21 +18,23 @@ public class gui {
         int choice = scanner.nextInt();
         scanner.nextLine(); // Verbrauche das Zeilenende nach der Eingabe.
 
+        rechner rechner = new rechner();
+
         switch (choice) {
             case 1:
                 System.out.print("Geben Sie den gewünschten Wochentag ein (z.B. 'Mi'): ");
                 String targetWochentag = scanner.nextLine();
-                filterByWochentag();
+                rechner.filterByWochentag(sterberateListe, targetWochentag);
                 break;
             case 2:
                 System.out.print("Geben Sie das Jahr ein, für das Sie den höchsten Wochenwert ermitteln möchten: ");
                 int year = scanner.nextInt();
-                findMaxWeekValueForYear();
+                rechner.findMaxWeekValueForYear(sterberateListe, year);
                 break;
             case 3:
                 System.out.print("Geben Sie das Jahr ein, für das Sie die Gesamtzahl der Todesfälle ermitteln möchten: ");
                 int targetYear = scanner.nextInt();
-                calculateTotalDeathsForYear();
+                rechner.calculateTotalDeathsForYear(sterberateListe, targetYear);
                 break;
             case 4:
                 System.out.println("Das Programm wird beendet.");
