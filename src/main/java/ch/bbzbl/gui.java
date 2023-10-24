@@ -7,13 +7,9 @@ public class gui {
 
     public static void KonsoleAnzeige(List<Sterberate> sterberateListe) {
         Scanner scanner = new Scanner(System.in);
-<<<<<<< HEAD
     
         System.out.println("\n∏=== Sterbedaten-Analyse-Menü ===");
-=======
-
         System.out.println("\n=== Sterbedaten-Analyse-Menü ===");
->>>>>>> 2a008a1192d7cac43c9651a8283777658ef2e2bf
         System.out.println("1. Filtern nach Wochentag");
         System.out.println("2. Höchster Wert der Wochen eines Jahres");
         System.out.println("3. Gesamtzahl der Todesfälle in einem Jahr");
