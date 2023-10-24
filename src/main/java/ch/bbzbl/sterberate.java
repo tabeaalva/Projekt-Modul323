@@ -2,21 +2,20 @@ package ch.bbzbl;
 
 public class Sterberate {
 
-public class sterberate {
  private String jahr;
  private int monat;
  private String wochentag;
- private String sterberate;
+ private String sterbedatum;
  private String anzTotal;
 
-    public void Sterberate() {
+    public Sterberate() {
     }
 
-    public void Sterberate(String jahr, int monat, String wochentag, String sterberate, String anzTotal) {
+    public Sterberate(String jahr, int monat, String wochentag, String sterbedatum, String anzTotal) {
         this.jahr = jahr;
         this.monat = monat;
         this.wochentag = wochentag;
-        this.sterberate = sterberate;
+        this.sterbedatum = sterbedatum;
         this.anzTotal = anzTotal;
     }
     
@@ -41,11 +40,11 @@ public class sterberate {
         return wochentag;
     }
 
-    public void setSterbedatum(String sterberate) {
-        this.sterberate = sterberate;
+    public void setSterbedatum(String sterbedatum) {
+        this.sterbedatum = sterbedatum;
     }
     public String getSterbedatum() {
-        return sterberate;
+        return sterbedatum;
     }
 
     public void setAnzTotal(String anzTotal) {

@@ -13,15 +13,9 @@ public class Main {
 
 
         System.out.println("hello");
-    try {
-    // Pfad zur JSON-Datei
-    String jsonDateipfad = "sterberateliste.json";
         try {
             // Pfad zur JSON-Datei
-
             String jsonDateipfad = "src/main/resources/sterberateliste.json";
-
-            String jsonDateipfad = "sterberateliste.json";
 
             // Gson-Objekt erstellen
             Gson gson = new Gson();
@@ -45,5 +39,5 @@ public class Main {
             e.printStackTrace();
             }
         }
-    }
+    
 }
