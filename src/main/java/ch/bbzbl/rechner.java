@@ -4,17 +4,23 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class rechner {
-
-    public void filterByWochentag(List<Sterberate> sterberateListe, String targetWochentag) {
-        int count = 0;
-        
+    public long filterByWochentag(List<Sterberate> sterberateListe, String targetWochentag) {
+        long count = 0;
+    
         for (Sterberate sterberate : sterberateListe) {
             if (sterberate.getWochentag().equals(targetWochentag)) {
                 count++;
+                System.out.println("Jahr: " + sterberate.getJahr());
+                System.out.println("Monat: " + sterberate.getMonat());
+                System.out.println("Wochentag: " + sterberate.getWochentag());
+                System.out.println("Sterbedatum: " + sterberate.getSterbedatum());
+                System.out.println("Anz Total: " + sterberate.getAnzTotal());
+                System.out.println();
             }
         }
-        
+    
         System.out.println("Anzahl der Todesfälle an " + targetWochentag + ": " + count);
+        return count;
     }
     
 

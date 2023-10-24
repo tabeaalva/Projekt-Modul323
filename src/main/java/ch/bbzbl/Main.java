@@ -22,16 +22,6 @@ public class Main {
             Reader reader = new FileReader(jsonDateipfad);
             List<Sterberate> sterberateListe = gson.fromJson(reader, sterberateListeType);
 
-            // Ausgabe der Benutzerdaten
-          /*  for (Sterberate sterberate : sterberateListe) {
-                System.out.println("Jahr: " + sterberate.getJahr());
-                System.out.println("Monat: " + sterberate.getMonat());
-                System.out.println("Wochentag: " + sterberate.getWochentag());
-                System.out.println("Sterbedatum: " + sterberate.getSterbedatum());
-                System.out.println("Anz Total: " + sterberate.getAnzTotal());
-                System.out.println();
-            } */
-
             // Hier rufen Sie die Gui-Methode auf und übergeben die Sterberate-Liste
             gui.KonsoleAnzeige(sterberateListe);
 
