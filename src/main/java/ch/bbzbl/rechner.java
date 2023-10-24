@@ -6,13 +6,17 @@ import java.util.stream.Collectors;
 public class rechner {
 
     public void filterByWochentag(List<Sterberate> sterberateListe, String targetWochentag) {
-        List<Sterberate> filteredList = sterberateListe.stream()
-                .filter(sterberate -> sterberate.getWochentag().equals(targetWochentag))
-                .collect(Collectors.toList());
-
-        System.out.println("Anzahl der Todesfälle an " + targetWochentag + ": " + filteredList.size());
-
+        int count = 0;
+        
+        for (Sterberate sterberate : sterberateListe) {
+            if (sterberate.getWochentag().equals(targetWochentag)) {
+                count++;
+            }
+        }
+        
+        System.out.println("Anzahl der Todesfälle an " + targetWochentag + ": " + count);
     }
+    
 
     public void findMaxWeekValueForYear(List<Sterberate> sterberateListe, int year) {
         int maxWeekValue = 0;
@@ -28,11 +32,15 @@ public class rechner {
     }
 
     public void calculateTotalDeathsForYear(List<Sterberate> sterberateListe, int targetYear) {
-        int totalDeaths = sterberateListe.stream()
-                .filter(sterberate -> Integer.parseInt(sterberate.getJahr()) == targetYear)
-                .map(sterberate -> Integer.parseInt(sterberate.getAnzTotal()))
-                .reduce(0, Integer::sum);
-
+        int totalDeaths = 0;
+    
+        for (Sterberate sterberate : sterberateListe) {
+            if (Integer.parseInt(sterberate.getJahr()) == targetYear) {
+                totalDeaths += Integer.parseInt(sterberate.getAnzTotal());
+            }
+        }
+    
         System.out.println("Gesamtzahl der Todesfälle im Jahr " + targetYear + ": " + totalDeaths);
     }
+    
 }
